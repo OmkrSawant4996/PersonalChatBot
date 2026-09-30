@@ -1,0 +1,21 @@
+[project]
+name = "personalchatbot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Omkar Sawant", email = "107481079+OmkrSawant4996@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=1.8.0",
+    "openai>=3.22.1",
+    "python-dotenv>=1.2.3",
+]
+
+[project.scripts]
+personalchatbot = "personalchatbot:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
